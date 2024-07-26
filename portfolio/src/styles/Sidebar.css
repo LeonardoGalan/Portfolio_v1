@@ -1,0 +1,42 @@
+/* .Sidebar{
+
+    height: 100%;
+    width: 554px;
+    background-color: orange;
+} */
+
+.avatar{
+    margin: 100px;
+    align-items: end;
+}
+
+.Sidebar{
+    height: 100vh;
+    background-color: #1f1815;
+    width: 50%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, 150%;
+    position:sticky;
+    background-image: url(../assets/nyc.jpeg); 
+    top: 0; /* Ensure the sidebar starts from the top */
+    left: 0;
+    overflow-y: auto; 
+}
+
+.sidebar-description{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    text-align: right;
+    margin: 0;
+    line-height: 1.5em;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+@media screen and (max-width: 1800px) {
+    body, input, select, textarea {
+        font-size: 12pt;
+    }
+}

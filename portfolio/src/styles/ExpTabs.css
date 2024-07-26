@@ -1,0 +1,67 @@
+ul {
+    list-style: none;
+    margin-left: -40px;
+  }
+
+.tab{
+    margin-bottom: 45px;
+
+}
+.tab-list{
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    margin-right: 20px;
+    height: 500px;
+    color: var(--lightest-slate);
+}
+.job-title {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: var(--lightest-slate);
+  }
+  
+  .job-company {
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    color: var(--green-bright);
+    font-weight: bold;
+  }
+  
+  .job-duration {
+    font-family: "NTR", sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    color: var(--slate);
+  }
+  .job-description li::before {
+    content: "▹    ";
+    color: var(--green-bright);
+    position: absolute;
+    left: 4em;
+  }
+  
+  .job-description li {
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    color: var(--slate);
+  }
+  
+  .job-description {
+    min-height: 300px;
+    padding-top: 24px;
+    max-width: 650px;
+    font-family: "NTR", sans-serif;
+    font-size: 20px;
+  }
+  
+  .job-description a,
+  .job-description b {
+    font-size: 19px;
+    font-weight: bold;
+  }
