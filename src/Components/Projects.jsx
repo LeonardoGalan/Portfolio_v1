@@ -3,28 +3,26 @@ import classes from '../styles/Projects.module.css';
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { Button, Paper, Title, useMantineTheme, Text } from '@mantine/core';
+import gameRator from "../../public/GameRator.png";
 
-    const spotlightProjects = {
-        "GameRator": {
-          title: "GameRator",
-          desc:
-            "A video-game rating website like MetaCritic",
-          techStack: "React, JavaScript, PostgreSQL, Sequelize, express.js, node.js ",
-          link: "https://github.com/LeonardoGalan/GameratorFrontEnd",
-          open: "https://gamerator.onrender.com/",
-          image: "../../public/GameRator.png"
-        },
-        Portfolio: {
-            title: "Portfolio",
-            desc:
-              "My portfolio :D",
-            techStack: "Vite, React, JavaScript, Mantine UI",
-            link: "N/A",
-            open: "N/A",
-            image: "../../public/GameRator.png"
-          },
-    };
-
+const spotlightProjects = {
+  GameRator: {
+    title: "GameRator",
+    desc: "A video-game rating website like MetaCritic",
+    techStack: "React, JavaScript, PostgreSQL, Sequelize, express.js, node.js ",
+    link: "https://github.com/LeonardoGalan/GameratorFrontEnd",
+    open: "https://gamerator.onrender.com/",
+    image: gameRator,
+  },
+  Portfolio: {
+    title: "Portfolio",
+    desc: "My portfolio :D",
+    techStack: "Vite, React, JavaScript, Mantine UI",
+    link: "N/A",
+    open: "N/A",
+    image: gameRator,
+  },
+};
 
 function Card({ title, desc, techStack, link, open, image }) {
   return (
@@ -32,7 +30,7 @@ function Card({ title, desc, techStack, link, open, image }) {
       shadow="md"
       p="xl"
       radius="md"
-          style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${image})` }}
       className={classes.card}
     >
       <div>
@@ -59,23 +57,20 @@ export default function Projects() {
     </Carousel.Slide>
   ));
 
-    return (
-        <div id = "projects">
-        <div className="section-header">
-            <span className="section-title">
-                Personal Projects
-            </span>
-
-        </div>  
-    <Carousel
-      slideSize= "100%"
-    //   slideGap={{ base: 'xl', sm: 1}}
-      align="start"
-          slidesToScroll={mobile ? 1 : 1}
-          loop
-    >
-      {slides}
-            </Carousel>
-            </div>
+  return (
+    <div id="projects">
+      <div className="section-header">
+        <span className="section-title">Personal Projects</span>
+      </div>
+      <Carousel
+        slideSize="100%"
+        //   slideGap={{ base: 'xl', sm: 1}}
+        align="start"
+        slidesToScroll={mobile ? 1 : 1}
+        loop
+      >
+        {slides}
+      </Carousel>
+    </div>
   );
 }

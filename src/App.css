@@ -6,16 +6,16 @@ html {
 
 
 .App {
-  font-family: "NTR";
+  font-family: "Nunito";
   background-color: var(--navy);
   display: flex;
   margin: auto;
 }
 
-a {
+/* a {
   text-decoration: none !important;
-  color: var(--green-bright) !important;
-}
+  color: var(--white) !important;
+} */
 
 #content {
   /* padding: 80px 200px; */
@@ -49,6 +49,7 @@ a {
   display: flex;
   padding-bottom: 42px;
   width: 100vw;
+  margin-left: 20px;
 }
 
 .section-header::after {
@@ -62,7 +63,7 @@ a {
 }
 
 .section-title {
-  font-family: "NTR", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: var(--lightest-slate);
   font-size: 46px;
   font-weight: bold;

@@ -7,25 +7,26 @@ import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import { MantineProvider } from '@mantine/core';
 import Projects from './Components/Projects'
+import Footer from "./Components/Footer";
 
 
 function App() {
 
   return (
     <>
-    <MantineProvider>
-      <div className='App'>
-        <Sidebar></Sidebar>
-        <div id = "content">
-          <About_Me></About_Me>
+      <MantineProvider>
+        <div className="App">
+          <Sidebar></Sidebar>
+          <div id="content">
+            <About_Me></About_Me>
             <ExperiencePlus></ExperiencePlus>
             <Projects></Projects>
+            <Footer></Footer>
           </div>
         </div>
-        </MantineProvider>
-      </>
-    
-  )
+      </MantineProvider>
+    </>
+  );
 }
 
 export default App

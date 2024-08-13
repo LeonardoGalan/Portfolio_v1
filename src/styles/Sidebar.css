@@ -4,12 +4,6 @@
     width: 554px;
     background-color: orange;
 } */
-
-.avatar{
-    margin: 100px;
-    align-items: end;
-}
-
 .Sidebar{
     height: 100vh;
     background-color: #1f1815;
@@ -21,14 +15,64 @@
     top: 0; /* Ensure the sidebar starts from the top */
     left: 0;
     overflow-y: auto; 
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    align-items: flex-end; /* Add this */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.avatar{
+    margin-bottom: 20px;
+}
+.email-icon {
+    justify-self: center;
+    font-size: 1.5em;
+    display: flex;
+}
+
+.intro-contact {
+    display: flex;
+    font-size: 22px;
+    font-weight: bolder;
+    align-self: center;
+    font-family: "Nunito";
+    margin-top: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: 1px solid var(--navy-shadow);
+    border-radius: 4px;
+    gap: 10px;
+
+}
+.intro-contact:hover {
+    background-color: var(--white);
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content:left; 
+    margin-top: 250px; 
+    font-size: 2.5rem; 
+    gap: 20px; 
+}
+
+.contact-icons a {
+    display: inline-block; /* Ensure a tags don't collapse */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.contact-icons img {
+    width: 40px; /* Adjust the size as needed */
+    height: auto;
+    display: block; /* Ensure the image is displayed */
 }
 
 .sidebar-description{
     text-align: center;
-    color: black;
+    color: white;
     font-size: 30px;
     text-align: right;
-    margin: 0;
+    margin: 20px 0;
     line-height: 1.5em;
     flex-direction: column;
     align-items: flex-end;
