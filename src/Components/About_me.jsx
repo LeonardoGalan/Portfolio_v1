@@ -16,7 +16,7 @@ export default function About_Me() {
       <a href="https://www.brooklyn.edu/" className="custom-link">
         CUNY Brooklyn College
       </a>{" "}
-      where I recieved my{" "}
+      where I received my{" "}
       <b style={{ color: "#64ffda" }}>Bachelors Of Science</b> in{" "}
       <b style={{ color: "#64ffda" }}>Computer Science</b>
       .
@@ -54,7 +54,6 @@ export default function About_Me() {
         <div className="about-content">
           <div className="about-description">
             {one}
-
             <ul className="skill-list">{skillList}</ul>
             {two}
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from '../styles/Projects.module.css';
+import "../styles/Projects.css";
 import { Carousel } from "@mantine/carousel";
 import { useMediaQuery } from "@mantine/hooks";
 import { Button, Paper, Title, useMantineTheme, Text } from "@mantine/core";
