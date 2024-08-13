@@ -14,12 +14,20 @@ const spotlightProjects = {
     open: "https://gamerator.onrender.com/",
     image: gameRator,
   },
-  Portfolio: {
-    title: "Portfolio",
-    desc: "My portfolio :D",
-    techStack: "Vite, React, JavaScript, Mantine UI",
-    link: "N/A",
-    open: "N/A",
+  Inventory_Management: {
+    title: "Inventory Management",
+    desc: "A simple inventory management system to add, delete, and update items",
+    techStack: "React, Javascript, Next.js, Material-UI, Firebase",
+    link: "https://github.com/LeonardoGalan/pantry_app",
+    open: "https://pantry-app-lake.vercel.app/",
+    image: gameRator,
+  },
+  AI_Customer_Support: {
+    title: "AI Customer Support",
+    desc: "An AI-driven customer support chatbot",
+    techStack: "React, JavaScript, Next.js, OpenAI, Vercel",
+    link: "https://github.com/LeonardoGalan/ai-customer-support",
+    open: "https://ai-customer-support-eosin-two.vercel.app/",
     image: gameRator,
   },
 };

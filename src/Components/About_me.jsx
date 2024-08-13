@@ -11,9 +11,10 @@ export default function About_Me() {
   const one = (
     <p>
       Hello there, my name is Leonardo Galan or better known by my peers as the
-      goat of all goats. I am a recent graduate from CUNY Brooklyn College in
-      New York City where I recieved my Bachelors Of Science in Computer
-      Science.
+      goat of all goats. I am a software engineer based in New York City, and a
+      recent graduate from{" "}
+      <a href="https://www.brooklyn.edu/">CUNY Brooklyn College</a> where I
+      recieved my <b>Bachelors Of Science</b> in <b>Computer Science</b>.
       <br /> The following is the tech stack I am proficient in and currently
       use:
     </p>
