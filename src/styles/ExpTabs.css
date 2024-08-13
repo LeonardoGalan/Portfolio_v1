@@ -5,8 +5,15 @@ ul {
 
 .tab{
     margin-bottom: 45px;
-
 }
+.tab-list .tab {
+  background-color: transparent; /* Ensure background is transparent */
+}
+
+.tab:hover{
+    color: var(--green-bright);
+}
+
 .tab-list{
     font-family: "Nunito", sans-serif;
     margin-left: 10px;
@@ -17,6 +24,7 @@ ul {
     height: 500px;
     color: var(--lightest-slate);
 }
+
 .job-title {
     font-family: "Nunito", sans-serif;
     font-size: 28px;
@@ -42,13 +50,13 @@ ul {
     content: "▹    ";
     color: var(--green-bright);
     position: absolute;
-    left: 4em;
+    left: 2em;
   }
   
   .job-description li {
     font-family: "Nunito", sans-serif;
     position: relative;
-    padding-left: 90px;
+    padding-left: 60px;
     padding-bottom: 16px;
     font-size: 18px;
     color: var(--slate);

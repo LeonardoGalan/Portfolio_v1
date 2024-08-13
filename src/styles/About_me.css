@@ -4,6 +4,10 @@
     max-width: 1000px;
     padding-top: 100px;
   }
+
+  .custom-link{
+      color: rgb(216, 197, 129);
+  }
   
   .about-description ul {
     padding-top: 20px;

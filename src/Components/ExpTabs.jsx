@@ -47,30 +47,33 @@ export default function ExpTab() {
     
 
   return (
-      <Tabs color="rgba(71, 222, 60, 1)" orientation="vertical" value={value} onChange={handleChange}>
-          <Tabs.List className='tab-list' >
-          {Object.keys(experienceItems).map((key, i) => (
-              <Tabs.Tab className = "tab" value={key} key = {i}>{key}</Tabs.Tab>
-          ))}
+    <Tabs
+      color="#64ffda"
+      orientation="vertical"
+      value={value}
+      onChange={handleChange}
+    >
+      <Tabs.List className="tab-list">
+        {Object.keys(experienceItems).map((key, i) => (
+          <Tabs.Tab className="tab" value={key} key={i}>
+            {key}
+          </Tabs.Tab>
+        ))}
       </Tabs.List>
-          {Object.keys(experienceItems).map((keys, i) => (
-              <Tabs.Panel value={keys} index={i} key = {i}>
-                  <span className = "job-title">
-                      {experienceItems[keys]["jobTitle"]}
-                  </span>
-                  <span className="job-company">{keys}</span>
-                  <div className='job-duration'>
-                      {experienceItems[keys]["duration"]}
-                  </div>
-                  <ul className="job-description">
-                      {experienceItems[keys]["desc"].map((descItem, i) =>
-                          <li key={i}> {descItem}</li>
-          )}
-                  </ul>
-              </Tabs.Panel>
-
-
-          ))}
+      {Object.keys(experienceItems).map((keys, i) => (
+        <Tabs.Panel value={keys} index={i} key={i}>
+          <span className="job-title">{experienceItems[keys]["jobTitle"]}</span>
+          <span className="job-company">{keys}</span>
+          <div className="job-duration">
+            {experienceItems[keys]["duration"]}
+          </div>
+          <ul className="job-description">
+            {experienceItems[keys]["desc"].map((descItem, i) => (
+              <li key={i}> {descItem}</li>
+            ))}
+          </ul>
+        </Tabs.Panel>
+      ))}
     </Tabs>
   );
 }

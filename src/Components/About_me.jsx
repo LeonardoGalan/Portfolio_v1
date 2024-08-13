@@ -13,8 +13,13 @@ export default function About_Me() {
       Hello there, my name is Leonardo Galan or better known by my peers as the
       goat of all goats. I am a software engineer based in New York City, and a
       recent graduate from{" "}
-      <a href="https://www.brooklyn.edu/">CUNY Brooklyn College</a> where I
-      recieved my <b>Bachelors Of Science</b> in <b>Computer Science</b>.
+      <a href="https://www.brooklyn.edu/" className="custom-link">
+        CUNY Brooklyn College
+      </a>{" "}
+      where I recieved my{" "}
+      <b style={{ color: "#64ffda" }}>Bachelors Of Science</b> in{" "}
+      <b style={{ color: "#64ffda" }}>Computer Science</b>
+      .
       <br /> The following is the tech stack I am proficient in and currently
       use:
     </p>
