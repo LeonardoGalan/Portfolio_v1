@@ -38,10 +38,28 @@
     z-index: 2; /* Ensure content is above the overlay */
 }
 
-
 .avatar{
     margin-bottom: 20px;
 }
+
+.typeAni{
+  display:inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10ch;
+    border-right: 3px solid black;
+    animation: typing 2s steps(23), cursor .5s step-end infinite alternate;
+}     
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+@keyframes cursor{
+    50% {   border-color: transparent; }
+}
+
 .email-icon {
     justify-self: center;
     font-size: 1.5em;

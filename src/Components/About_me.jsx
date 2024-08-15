@@ -10,9 +10,8 @@ import javaicon from "../../public/java-original-wordmark.svg";
 export default function About_Me() {
   const one = (
     <p>
-      Hello there, my name is Leonardo Galan or better known by my peers as the
-      goat of all goats. I am a software engineer based in New York City, and a
-      recent graduate from{" "}
+      Hello there, my name is Leonardo Galan. I am a software engineer based in
+      New York City, and a recent graduate from{" "}
       <a href="https://www.brooklyn.edu/" className="custom-link">
         CUNY Brooklyn College
       </a>{" "}
@@ -20,8 +19,10 @@ export default function About_Me() {
       <b style={{ color: "#64ffda" }}>Bachelors Of Science</b> in{" "}
       <b style={{ color: "#64ffda" }}>Computer Science</b>
       .
-      <br /> The following is the tech stack I am proficient in and currently
-      use:
+      <br />I hold a keen interest in products that scale globally and
+      contribute significantly towards the acceleration of what modern societies
+      can offer. The following is the tech stack I am proficient in and
+      currently use:
     </p>
   );
   const skillArr = [

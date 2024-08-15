@@ -31,8 +31,8 @@ export default function Sidebar() {
         className="avatar"
       />
       <h1 className="sidebar-description">
-        Hi, Leo here. <br /> I hope you enjoy my portfolio and the rest of your
-        day.
+        <p className="typeAni">Hi, Leo here.</p> <br /> <br />I hope you enjoy
+        my portfolio and the rest of your day.
       </h1>
       <a href="mailto:leonardogalan2@gmail.com" className="intro-contact">
         <MdEmail className="email-icon" />
