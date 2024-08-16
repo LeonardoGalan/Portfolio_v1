@@ -46,34 +46,38 @@ export default function ExpTab() {
     };
     
 
-  return (
-    <Tabs
-      color="#64ffda"
-      orientation="vertical"
-      value={value}
-      onChange={handleChange}
-    >
-      <Tabs.List className="tab-list">
-        {Object.keys(experienceItems).map((key, i) => (
-          <Tabs.Tab className="tab" value={key} key={i}>
-            {key}
-          </Tabs.Tab>
-        ))}
-      </Tabs.List>
-      {Object.keys(experienceItems).map((keys, i) => (
-        <Tabs.Panel value={keys} index={i} key={i}>
-          <span className="job-title">{experienceItems[keys]["jobTitle"]}</span>
-          <span className="job-company">{keys}</span>
-          <div className="job-duration">
-            {experienceItems[keys]["duration"]}
-          </div>
-          <ul className="job-description">
-            {experienceItems[keys]["desc"].map((descItem, i) => (
-              <li key={i}> {descItem}</li>
+    return (
+      <div className="exp-tab">
+        <Tabs
+          color="#64ffda"
+          orientation="vertical"
+          value={value}
+          onChange={handleChange}
+        >
+          <Tabs.List className="tab-list">
+            {Object.keys(experienceItems).map((key, i) => (
+              <Tabs.Tab className="tab" value={key} key={i}>
+                {key}
+              </Tabs.Tab>
             ))}
-          </ul>
-        </Tabs.Panel>
-      ))}
-    </Tabs>
-  );
+          </Tabs.List>
+          {Object.keys(experienceItems).map((keys, i) => (
+            <Tabs.Panel value={keys} index={i} key={i} className="tab-panel">
+              <span className="job-title">
+                {experienceItems[keys]["jobTitle"]}
+              </span>
+              <span className="job-company">{keys}</span>
+              <div className="job-duration">
+                {experienceItems[keys]["duration"]}
+              </div>
+              <ul className="job-description">
+                {experienceItems[keys]["desc"].map((descItem, i) => (
+                  <li key={i}> {descItem}</li>
+                ))}
+              </ul>
+            </Tabs.Panel>
+          ))}
+        </Tabs>
+      </div>
+    );
 }
