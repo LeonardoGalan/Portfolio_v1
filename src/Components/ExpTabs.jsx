@@ -9,7 +9,8 @@ export default function ExpTab() {
             jobTitle: "Software Engineer Intern @ ",
             duration: "JUN 2023 - AUG 2023",
             desc: [
-              "Engineered a responsive UI/UX for HealthFirst’s Patient 360 web application, leveraging React and TypeScript. This app for HealthFirst - a leading health insurance provider, serving over 1.8 million members in New York, hopes to improve accessibility of patient data and increased efficiency for healthcare professionals.",
+              "Engineered a responsive UI/UX for HealthFirst’s Patient 360 web application, leveraging React and TypeScript.",
+              "This app for HealthFirst - a leading health insurance provider, serving over 1.8 million members in New York, hopes to improve accessibility of patient data and increased efficiency for healthcare professionals.",
               "Designed user-centric features such as drag-and-drop functionality for moving patient data tables, hide/show certain data information such as patient vitals, medications, which enhanced overall application usability",
             ],
           },
