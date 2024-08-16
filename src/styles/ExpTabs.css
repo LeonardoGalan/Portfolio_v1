@@ -106,4 +106,34 @@ ul {
   font-size: 1rem;
 }
 }
+
+@media screen and (max-width: 500px) {
+  .tab-panel {
+    height: 800px; /* this prevents the tabs from moving when the screen is resized */
+  }
+  .tab-list .tab {
+    font-size: 0.7rem; 
+    width: 200px;
+    overflow: scroll;
+    text-overflow: ellipsis; 
+  }
+  .tab-list {
+    white-space: nowrap; 
+    margin-right:30px;
+    font-size: 1.5rem; 
+    display: flex;
+  }
+  .job-description {
+    flex-wrap: wrap; 
+min-height: 600px;
+max-height: 700px;
+height: 350px;
+overflow-y: scroll; 
+  }
+  .job-description,
+.job-title,.job-company,.job-duration {
+line-height: 2;
+font-size: 0.8rem;
+}
+}
   

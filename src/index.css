@@ -68,7 +68,7 @@ button:focus-visible {
 } */
 html, body {
   background-color: var(--navy);
-  overflow-x: hidden;
+  overscroll-behavior: none; /* This stops the bounce effect */
 }
 
 body {
