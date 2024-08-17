@@ -113,7 +113,7 @@ ul {
   }
   .tab-list .tab {
     font-size: 0.7rem; 
-    width: 200px;
+    width: 125px;
     overflow: scroll;
     text-overflow: ellipsis; 
   }
@@ -129,8 +129,8 @@ min-height: 600px;
 max-height: 700px;
 height: 350px;
 overflow-y: scroll; 
+font-size: 0.6rem;
   }
-  .job-description,
 .job-title,.job-company,.job-duration {
 line-height: 2;
 font-size: 0.8rem;
