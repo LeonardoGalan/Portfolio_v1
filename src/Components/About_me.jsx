@@ -11,14 +11,12 @@ export default function About_Me() {
   const one = (
     <p>
       Hello there, my name is Leonardo Galan. I am a software engineer based in
-      New York City, and a recent graduate from{" "}
-      <a href="https://www.brooklyn.edu/" className="custom-link">
-        CUNY Brooklyn College
+      New York City, an incoming student at{" "}
+      <a href="https://www.gatech.edu/" className="custom-link">
+        Georgia Institute Of Technology
       </a>{" "}
-      where I received my{" "}
-      <b style={{ color: "#64ffda" }}>Bachelors Of Science</b> in{" "}
-      <b style={{ color: "#64ffda" }}>Computer Science</b>
-      .
+      in pursuit of my <b style={{ color: "#64ffda" }}>Master Of Science</b> in{" "}
+      <b style={{ color: "#64ffda" }}>Computer Science</b> degree.
       <br />I hold a keen interest in products that scale globally and
       contribute significantly towards the acceleration of what modern societies
       can offer. The following is the tech stack I am proficient in and
@@ -41,9 +39,16 @@ export default function About_Me() {
   ));
 
   const two = (
-    <p>
-      Besides programming I enjoy strength training, competitive gaming, am a
-      movie buff {"("}thrillers, suspense, psychological{")"}, and anime/manga!
+    <p
+      style={{
+        letterSpacing: "-0.7px",
+        paddingTop: "7px",
+      }}
+    >
+      Besides programming I enjoy: strength training, competitive gaming, making
+      my friends laugh, being a movie buff {"("}thrillers, suspense,
+      psychological
+      {")"}, and anime/manga!
     </p>
   );
   return (

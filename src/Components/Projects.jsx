@@ -7,8 +7,15 @@ import { Button, Paper, Title, useMantineTheme, Text } from "@mantine/core";
 import inventory from "../assets/Inventory_Management.gif";
 import gameRator from "../assets/Gamerator-vid.mp4";
 import ai_chat from "../assets/Chat-support-vid.mp4";
+// import AnimeMe from "../assets/Gbdemo.mp4";
 
 const spotlightProjects = {
+  // AnimeMe: {
+  //   title: "AnimeMe",
+  //   desc: "Alter any selfie or image into a detailed animated version",
+  //   techStack: "React Native, JavaScript, MongoDB, express.js, expo",
+  //   image: AnimeMe,
+  // },
   GameRator: {
     title: "GameRator",
     desc: "A video-game rating website like MetaCritic",
